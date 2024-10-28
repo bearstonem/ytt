@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        /* Markdown styling */
+        .markdown-content {
+            line-height: 1.6;
+        }
+        .markdown-content h1,
+        .markdown-content h2,
+        .markdown-content h3 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+        }
+        .markdown-content ul,
+        .markdown-content ol {
+            padding-left: 2em;
+            margin-bottom: 1em;
+        }
+        .markdown-content strong {
+            color: #2c3e50;
+        }
+        .markdown-content p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button id="copyBtn">Copy Text</button>
+        <button id="downloadBtn">Download</button>
+    </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <div id="summary" class="markdown-content">Loading summary...</div>
+    </div>
+
+    <div class="section">
+        <h2>Full Transcript</h2>
+        <div id="transcript">Loading transcript...</div>
+    </div>
+
+    <!-- Load libraries and scripts -->
+    <script src="marked.min.js"></script>
+    <script src="transcript.js"></script>
+</body>
+</html>

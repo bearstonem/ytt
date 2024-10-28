@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Transcriber",
+  "version": "1.0",
+  "description": "Transcribe YouTube videos using Groq API",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://localhost:5000/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "marked.min.js",
+    "transcript.html",
+    "transcript.js"
+  ]
+}
