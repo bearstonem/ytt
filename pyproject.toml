@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "youtube-transcriber"
+version = "0.1.0"
+description = "A YouTube video transcription and summarization tool"
+authors = ["Your Name <bear@anarrayofone.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^3.0.0"
+flask-cors = "^4.0.0"
+yt-dlp = "^2024.3.10"
+groq = "^0.4.2"
+python-dotenv = "^1.0.0"
+cerebras-cloud-sdk = "^1.8.0"
+ffmpeg-python = "^0.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+youtube-transcriber = "youtube_transcriber.app:main"
+
+[tool.poetry.extras]
+system = ["ffmpeg", "yt-dlp"]
