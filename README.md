@@ -157,18 +157,20 @@ The server will start on port 5000 with the following endpoints:
   ```
 
 ## Project Structure
+```
 youtube-transcriber/
-├── app.py                    # CLI application
-├── server.py                 # Flask server
-├── setup.sh                  # Linux/MacOS setup script
-├── setup.ps1                 # Windows setup script
-├── install_service.bat       # Windows service installer
-├── install_service_linux.sh  # Linux service installer
-├── restart_service.bat       # Windows service restart utility
+├── app.py                      # CLI application
+├── server.py                   # Flask server
+├── setup.sh                    # Linux/MacOS setup script
+├── setup.ps1                   # Windows setup script
+├── install_service.bat         # Windows service installer
+├── install_service_linux.sh    # Linux service installer
+├── restart_service.bat         # Windows service restart utility
 ├── youtube-transcriber.service # Linux systemd service configuration
-├── pyproject.toml           # Poetry configuration
-├── .env                     # Environment variables
-└── README.md               # This file
+├── pyproject.toml             # Poetry configuration
+├── .env                       # Environment variables
+└── README.md                  # This file
+```
 
 ## Development
 
